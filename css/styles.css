@@ -150,7 +150,7 @@ body.dark-theme h6 {
 }
 .sec-two {
     background-image: linear-gradient(to bottom, var(--wt-d), var(--wt-d), var(--wt-l));
-    height: 500px;
+    height: 150px;
 }
 body.dark-theme .sec-two {
     background-image: linear-gradient(to bottom, var(--dk-l), var(--dk-l), var(--dk-d));
