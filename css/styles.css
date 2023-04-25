@@ -148,7 +148,13 @@ body.dark-theme h6 {
     color: #fff;
     padding: 0;
 }
-
+.sec-two {
+    background-image: linear-gradient(to bottom, var(--wt-d), var(--wt-d), var(--wt-l));
+    height: 500px;
+}
+body.dark-theme .sec-two {
+    background-image: linear-gradient(to bottom, var(--dk-l), var(--dk-l), var(--dk-d));
+}
 @media (max-width: 600px) {
     .bg-m {
         padding: 3% 3% 0 9%;
