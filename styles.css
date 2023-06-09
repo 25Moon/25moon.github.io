@@ -53,31 +53,31 @@ h1, h3 {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    padding: 16px;
 }
 /**/
 .dice2 {
     display: grid;
     box-sizing: border-box;
+    padding: 16px;
 }
 .dice2 .dot1 {
     justify-self: flex-start;
     align-self: flex-start;
-    margin: 18%;
 }
 .dice2 .dot2 {
     justify-self: flex-end;
     align-self: flex-end;
-    margin: 18%;
 }
 /**/
 .dice3 {
     display: grid;
     box-sizing: border-box;
+    padding: 16px;
 }
 .dice3 .dot1 {
     justify-self: flex-start;
     align-self: flex-start;
-    margin: 12%;
 }
 .dice3 .dot3 {
     justify-self: center;
@@ -86,34 +86,30 @@ h1, h3 {
 .dice3 .dot2 {
     justify-self: flex-end;
     align-self: flex-end;
-    margin: 12%;
 }
 /**/
 .dice4 {
     display: grid;
     box-sizing: border-box;
+    padding: 16px;
 }
 .dice4 .dot1 {
-    margin: 8.5%;
     justify-self: flex-start;
     align-self: flex-start;
     position: absolute;
 }
 .dice4 .dot2 {
-    margin: 8.5%;
     justify-self: flex-end;
     align-self: flex-start;
     position: absolute;
 }
 .dice4 .dot3 {
-    margin: 8.5%;
     justify-self: flex-start;
     align-self: flex-end;
     position: absolute;
 
 }
 .dice4 .dot4 {
-    margin: 8.5%;
     justify-self: flex-end;
     align-self: flex-end;
     position: absolute;
@@ -122,28 +118,25 @@ h1, h3 {
 .dice5 {
     display: grid;
     box-sizing: border-box;
+    padding: 16px;
 }
 .dice5 .dot1 {
-    margin: 8.5%;
     justify-self: flex-start;
     align-self: flex-start;
     position: absolute;
 }
 .dice5 .dot2 {
-    margin: 8.5%;
     justify-self: flex-end;
     align-self: flex-start;
     position: absolute;
 }
 .dice5 .dot3 {
-    margin: 8.5%;
     justify-self: flex-start;
     align-self: flex-end;
     position: absolute;
 
 }
 .dice5 .dot4 {
-    margin: 8.5%;
     justify-self: flex-end;
     align-self: flex-end;
     position: absolute;
@@ -188,6 +181,144 @@ h1, h3 {
 .dice6 .dot6 {
     justify-self: flex-end;
     align-self: flex-end;
+    position: absolute;
+}
+/**/
+.dice7 {
+    display: grid;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.dice7 .dot1 {
+    justify-self: flex-start;
+    align-self: flex-start;
+    position: absolute;
+}
+.dice7 .dot2 {
+    justify-self: flex-start;
+    align-self: center;
+    position: absolute;
+}
+.dice7 .dot3 {
+    justify-self: flex-start;
+    align-self: flex-end;
+    position: absolute;
+}
+.dice7 .dot4 {
+    justify-self: flex-end;
+    align-self: flex-start;
+    position: absolute;
+}
+.dice7 .dot5 {
+    justify-self: flex-end;
+    align-self: center;
+    position: absolute;
+}
+.dice7 .dot6 {
+    justify-self: flex-end;
+    align-self: flex-end;
+    position: absolute;
+}
+.dice7 .dot7 {
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+}
+/**/
+.dice8 {
+    display: grid;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.dice8 .dot1 {
+    justify-self: flex-start;
+    align-self: flex-start;
+    position: absolute;
+}
+.dice8 .dot2 {
+    justify-self: flex-start;
+    align-self: center;
+    position: absolute;
+}
+.dice8 .dot3 {
+    justify-self: flex-start;
+    align-self: flex-end;
+    position: absolute;
+}
+.dice8 .dot4 {
+    justify-self: flex-end;
+    align-self: flex-start;
+    position: absolute;
+}
+.dice8 .dot5 {
+    justify-self: flex-end;
+    align-self: center;
+    position: absolute;
+}
+.dice8 .dot6 {
+    justify-self: flex-end;
+    align-self: flex-end;
+    position: absolute;
+}
+.dice8 .dot7 {
+    justify-self: center;
+    align-self: flex-start;
+    position: absolute;
+}
+.dice8 .dot8 {
+    justify-self: center;
+    align-self: flex-end;
+    position: absolute;
+}
+/**/
+.dice9 {
+    display: grid;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.dice9 .dot1 {
+    justify-self: flex-start;
+    align-self: flex-start;
+    position: absolute;
+}
+.dice9 .dot2 {
+    justify-self: flex-start;
+    align-self: center;
+    position: absolute;
+}
+.dice9 .dot3 {
+    justify-self: flex-start;
+    align-self: flex-end;
+    position: absolute;
+}
+.dice9 .dot4 {
+    justify-self: flex-end;
+    align-self: flex-start;
+    position: absolute;
+}
+.dice9 .dot5 {
+    justify-self: flex-end;
+    align-self: center;
+    position: absolute;
+}
+.dice9 .dot6 {
+    justify-self: flex-end;
+    align-self: flex-end;
+    position: absolute;
+}
+.dice9 .dot7 {
+    justify-self: center;
+    align-self: flex-start;
+    position: absolute;
+}
+.dice9 .dot8 {
+    justify-self: center;
+    align-self: flex-end;
+    position: absolute;
+}
+.dice9 .dot9 {
+    justify-self: center;
+    align-self: center;
     position: absolute;
 }
 /**/

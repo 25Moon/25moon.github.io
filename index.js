@@ -19,7 +19,7 @@ let p2wins = 0;
 roll1.addEventListener("click", () => {
     if (turn === 1 && clicks1 > 0) {
         prev1.classList.add("hidden");
-        output1 = Math.ceil(Math.random() * 6);
+        output1 = Math.ceil(Math.random() * 9);
         prev1 = document.querySelector(".dice" + output1 + ".p1");
         prev1.classList.remove("hidden");
         clicks1--;
@@ -39,7 +39,7 @@ skip1.addEventListener("click", () => {
 roll2.addEventListener("click", () => {
     if (turn === 0) {
         prev2.classList.add("hidden");
-        output2 = Math.ceil(Math.random() * 6);
+        output2 = Math.ceil(Math.random() * 9);
         prev2 = document.querySelector(".dice" + output2 + ".p2");
         prev2.classList.remove("hidden");
         clicks2--;
