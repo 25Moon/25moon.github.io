@@ -236,9 +236,9 @@ h1, h3 {
 .claw {
     height: 45px;
     width: 7px;
-    background: #511;
+    background: #f11;
     border-radius: 5px;
-    box-shadow: 0 0 10px #000 inset, 0 0 2px #fff;
+    box-shadow: 1px 1px 3px #000 inset, -1px 1px 3px #000 inset, 1px -1px 3px #000 inset, -1px -1px 3px #000 inset;
 }
 .claw.last {
     rotate: 49deg;
@@ -246,4 +246,5 @@ h1, h3 {
     right: 34px;
     height: 66px;
     bottom: 10px;
+    box-shadow: 1px 1px 3px #000 inset, -1px 1px 3px #000 inset, 1px -1px 3px #000 inset, -1px -1px 3px #000 inset;
 }
