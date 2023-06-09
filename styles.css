@@ -1,35 +1,249 @@
 body {
-    background: #000;
-    color: #eea236;
+    background: radial-gradient(circle at center, #1A1A1A, #000 45%, #000 45%, #511 1%, #000 50%);
     text-align: center;
+    min-height: 1300px;
+    color: #fff;
 }
-h1 {
-    margin-top: 150px;
-    text-align: center;
-    font-size: 3em;
-    text-shadow: 1px 1px 1px #999, -1px -1px 1px #999, -1px 1px 1px #555, 1px -1px 1px #999;
-    background: #000;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 10px 20px;
-    border: 2px solid #fff;
-}
+
 h2 {
-    margin-bottom: -30px;
+    margin-bottom: 30px;
     margin-top: 30px;
-    font-size: 2em;
+    font-size: 3em;
+    color: #511;
+    text-shadow: 1px 1px 5px #eee, -1px -1px 5px #eee, -1px 1px 5px #eee, 1px -1px 5px #eee;
+}
+h4 {
+    font-size: 1.5em;
+    padding: 0 25%;
+    color: #eee;
+    text-shadow: 3px 3px 10px #511, -3px -3px 10px #511, -3px 3px 10px #511, 3px -3px 10px #511;
+}
+h1, h3 {
+    color: #eee;
+    text-shadow: 3px 3px 10px #511, -3px -3px 10px #511, -3px 3px 10px #511, 3px -3px 10px #511;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 18%;
+    position: relative;
+    top: 375px;
+}
+.container.dicon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20%;
+    position: relative;
+    top: 330px;
+}
+.dice {
+    height: 150px;
+    width: 150px;
+    background: #000;
+    border-radius: 10px;
+    border: 1px solid #511;
+    box-shadow: 1px 1px 30px #f11;
+    position: initial;
+}
+/**/
+.dice1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+/**/
+.dice2 {
+    display: grid;
+    box-sizing: border-box;
+}
+.dice2 .dot1 {
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin: 18%;
+}
+.dice2 .dot2 {
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin: 18%;
+}
+/**/
+.dice3 {
+    display: grid;
+    box-sizing: border-box;
+}
+.dice3 .dot1 {
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin: 12%;
+}
+.dice3 .dot3 {
+    justify-self: center;
+    align-self: center;
+}
+.dice3 .dot2 {
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin: 12%;
+}
+/**/
+.dice4 {
+    display: grid;
+    box-sizing: border-box;
+}
+.dice4 .dot1 {
+    margin: 8.5%;
+    justify-self: flex-start;
+    align-self: flex-start;
+    position: absolute;
+}
+.dice4 .dot2 {
+    margin: 8.5%;
+    justify-self: flex-end;
+    align-self: flex-start;
+    position: absolute;
+}
+.dice4 .dot3 {
+    margin: 8.5%;
+    justify-self: flex-start;
+    align-self: flex-end;
+    position: absolute;
+
+}
+.dice4 .dot4 {
+    margin: 8.5%;
+    justify-self: flex-end;
+    align-self: flex-end;
+    position: absolute;
+}
+/**/
+.dice5 {
+    display: grid;
+    box-sizing: border-box;
+}
+.dice5 .dot1 {
+    margin: 8.5%;
+    justify-self: flex-start;
+    align-self: flex-start;
+    position: absolute;
+}
+.dice5 .dot2 {
+    margin: 8.5%;
+    justify-self: flex-end;
+    align-self: flex-start;
+    position: absolute;
+}
+.dice5 .dot3 {
+    margin: 8.5%;
+    justify-self: flex-start;
+    align-self: flex-end;
+    position: absolute;
+
+}
+.dice5 .dot4 {
+    margin: 8.5%;
+    justify-self: flex-end;
+    align-self: flex-end;
+    position: absolute;
+}
+.dice5 .dot5 {
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+}
+/**/
+.dice6 {
+    display: grid;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.dice6 .dot1 {
+    justify-self: flex-start;
+    align-self: flex-start;
+    position: absolute;
+}
+.dice6 .dot2 {
+    justify-self: flex-start;
+    align-self: center;
+    position: absolute;
+}
+.dice6 .dot3 {
+    justify-self: flex-start;
+    align-self: flex-end;
+    position: absolute;
+
+}
+.dice6 .dot4 {
+    justify-self: flex-end;
+    align-self: flex-start;
+    position: absolute;
+}
+.dice6 .dot5 {
+    justify-self: flex-end;
+    align-self: center;
+    position: absolute;
+}
+.dice6 .dot6 {
+    justify-self: flex-end;
+    align-self: flex-end;
+    position: absolute;
+}
+/**/
+.dot {
+    background: #ddd;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    box-shadow: 3px 3px 10px #f11, -3px -3px 10px #f11, -3px 3px 10px #f11, 3px -3px 10px #f11;
+}
+.outcome {
+    position: absolute;
+    top: -220px;
+}
+.hidden {
+    visibility: hidden !important;
+    position: absolute !important;
 }
 .btn {
-    margin-top: 100px;
+    margin-top: 15px;
     text-align: center;
     font-size: 1.5em;
     text-shadow: 1px 1px 1px #555, -1px -1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555;
     padding: 10px 20px;
     border-radius: 10px;
-    background: #eea236;
-    border-color: #999;
+    background: #000;
+    border: 2px solid #511;
     color: #fff;
 }
+
 .btn:hover {
     border-color: #fff;
+}
+.p1winC {
+    position: absolute;
+    right: 90%;
+    display: flex;
+    gap: 7px;
+}
+.p2winC {
+    position: absolute;
+    left: 90%;
+    display: flex;
+    gap: 7px;
+}
+.claw {
+    height: 45px;
+    width: 7px;
+    background: #511;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000 inset, 0 0 2px #fff;
+}
+.claw.last {
+    rotate: 49deg;
+    position: relative;
+    right: 34px;
+    height: 66px;
+    bottom: 10px;
 }
