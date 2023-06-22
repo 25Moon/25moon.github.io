@@ -1,18 +1,42 @@
-let pages = document.querySelectorAll('.s-dot-container a, .boat-link');
-let containers = document.querySelectorAll('.container1, .container2, .container3');
-let colorList = ['#28bbb8', '#c0b17b', '#eee'];
+const display = document.querySelector('.submit');
+const row1 = document.querySelectorAll('.top-pins td');
+const row2 = document.querySelectorAll('.control-pins td');
+const row3 = document.querySelectorAll('.master-pins td');
+const row4 = document.querySelectorAll('.bottom-pins td');
 
-pages.forEach(page => {
-  page.addEventListener('click', function() {
-    let pageNumber = this.className[this.className.length -1]; // Get the page number from the class name
-    // Hide all containers
-    containers.forEach(container => {
-      container.classList.add('hide-me');
-    });
 
-    // Show the corresponding container
-    document.querySelector('.container' + pageNumber).classList.remove('hide-me');
-    document.querySelector('#svg').style.fill = colorList[pageNumber - 1];
-    document.querySelector('.container' + pageNumber + ' .page' + pageNumber + ' .s-dot').style.backgroundColor = '#fff5d6'
-  });
-});
+display.addEventListener('click', function (evt){
+    evt.preventDefault();
+    let mk = document.querySelector('#Mk').value;
+
+    let ck = document.querySelector('#Ck').value;
+
+    let uk = document.querySelector('#Uk').value;
+
+    let tpp = []
+    let ctp = []
+    let mtp = []
+    let btp = []
+
+    for (let i = 0; i < ck.length; i++) {
+        // bottom Pins
+        btp.push(Math.min(mk[i], uk[i]));
+        // master Pins
+        mtp.push(Math.abs((parseInt(mk[i]) - parseInt(uk[i]))));
+    }
+
+    for (let i = 0; i < ck.length; i++) {
+        // control Pins
+        ctp.push((parseInt(ck[i]) + 10) - (parseInt(mtp[i]) + parseInt(btp[i])));
+        // top Pins
+        tpp.push(23 - (parseInt(ck[i]) + 10));
+    }
+
+    for (let i = 0; i < ck.length; i++) {
+        row1[i].innerHTML = tpp[i];
+        row2[i].innerHTML = ctp[i];
+        row3[i].innerHTML = mtp[i];
+        row4[i].innerHTML = btp[i];
+    }
+    row1[1].innerHTML = '6';
+})
