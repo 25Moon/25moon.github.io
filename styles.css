@@ -65,7 +65,9 @@ h3 {
     justify-items: center;
     margin-bottom: 30px;
 }
-
+.cut.cut-flex {
+    display: flex;
+}
 .submit {
     padding: 10px 20px;
     border: 2px solid white;
@@ -85,20 +87,50 @@ input {
     font-size: 1.2em;
     padding-left: 10px;
 }
+
+input[type=radio] {
+    appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+input[type="radio"]:checked + label {
+    appearance: none;
+    color: var(--gold);
+}
+input[type="radio"]:checked {
+    appearance: none;
+    border-radius: 100%;
+    border: 2px solid white !important;
+    outline: none;
+    background-color: #000;
+    text-shadow: none;
+}
+/*input[type="radio"]:focus {*/
+/*    appearance: none;*/
+/*    border-radius: 100%;*/
+/*    border: 2px solid white !important;*/
+/*    outline: none;*/
+/*    background-color: #000;*/
+/*    text-shadow: none;*/
+/*    box-shadow: none;*/
+/*}*/
 label {
     font-size: 1.4em;
 }
 table {
-    border: 2px solid white;
-    border-radius: 25px;
-    padding: 10px;
     background: black;
+    border-radius: 22px;
+    box-shadow: 0 0 20px black;
 }
 td {
-    border: 2px solid white;
+    border: 2px solid #28bbb8;
     font-weight: 400;
-    padding: 0 10px;
-    width: 35px;
+    padding: 0;
+    width: 55px;
+    height: 55px;
     text-align: center;
     font-size: 2em;
     background: black;
@@ -108,12 +140,12 @@ tr {
 
 }
 th {
-    border: 2px solid white;
     font-weight: 400;
     padding: 10px;
     font-size: 2em;
     background: black;
     color: #28bbb8;
+    border: 2px solid #28bbb8;
 }
 .pins {
     display: grid;
@@ -121,19 +153,22 @@ th {
     margin: 100px 0 0 0;
 }
 .bdTr {
-    border-top-right-radius: 10px;
+    border-top-right-radius: 20px;
 }
 .bdTl {
-    border-top-left-radius: 10px;
+    border-top-left-radius: 20px;
 }
 .bdBl{
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 20px;
 }
 .bdBr {
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 20px;
 }
 .alt td, .alt th {
-    background: black;
-    border: 2px solid #28bbb8;
+    border: 2px solid white;
     color: white;
+}
+.radio-flex {
+    display: grid;
+    padding: 0 20px;
 }

@@ -37,17 +37,32 @@
             <input id="Ck" type="text">
         </div>
         <div class="cut">
-            <label for="Uk"> User Key
+            <label for="Uk"> Change Key
             </label>
             <input id="Uk" type="text">
         </div>
+        <div class="cut cut-flex">
+            <div class="radio-flex">
+                <input id="input8" type="radio" value="0" name="IC" required>
+                <label for="input8" class="f-radio-b">A2</label>
+            </div>
+            <div class="radio-flex">
+                <input id="input9" type="radio" value="1" name="IC" required>
+                <label for="input9"  class="f-radio-b">A3</label>
+            </div>
+            <div class="radio-flex">
+                <input id="input10" type="radio" value="2" name="IC" required>
+                <label for="input10"  class="f-radio-b">A4</label>
+            </div>
+        </div>
         <button type="submit" class="submit">Display Pins</button>
     </div>
+
 </form>
 <div class="pins">
     <table>
         <tr class="top-pins">
-            <th class="bdTl">Top Pins:</th>
+            <th class="bdTl">Driver</th>
             <td>0</td>
             <td>0</td>
             <td>0</td>
@@ -57,7 +72,7 @@
             <td class="bdTr">0</td>
         </tr>
         <tr class="alt control-pins">
-            <th>Top Pins:</th>
+            <th>Control</th>
             <td>0</td>
             <td>0</td>
             <td>0</td>
@@ -67,7 +82,7 @@
             <td>0</td>
         </tr>
         <tr class="master-pins">
-            <th>Top Pins:</th>
+            <th>Master</th>
             <td>0</td>
             <td>0</td>
             <td>0</td>
@@ -77,7 +92,7 @@
             <td>0</td>
         </tr>
         <tr class="alt bottom-pins">
-            <th class="bdBl">Bot Pins:</th>
+            <th class="bdBl">Bottom</th>
             <td>0</td>
             <td>0</td>
             <td>0</td>
