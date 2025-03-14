@@ -1,16 +1,19 @@
+* {
+  overflow: hidden;
+}
+
 html {
   color: #fff;
   font-size: 1em;
   line-height: 1.4;
   background: #eee;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 body {
-  padding: 0;
   margin: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  padding: 0;
   width: 100%;
 }
 a {
@@ -22,6 +25,7 @@ a {
 nav {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 5%;
   justify-content: center;
   padding: 15px;
@@ -53,7 +57,7 @@ h1 {
   width: 100%;
 }
 #about {
-  height: 1000px;
+  height: 10000px;
   z-index: 4; /* Set to 4!!!!!!!!!!!!!!*/
   display: inline-block;
   background: #eee;
