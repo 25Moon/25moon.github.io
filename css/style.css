@@ -10,27 +10,28 @@ html {
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow-y: scroll;
 }
 body {
   margin: 0;
   padding: 0;
   width: 100%;
+  background: #1a1a1a;
 }
 a {
   color: #fff;
   text-decoration: none;
-  z-index: 1000;
-  display: inline-block;
 }
+
 nav {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   gap: 5%;
   justify-content: center;
-  padding: 15px;
+  padding: 15px 5%;
   font-size: 1.2rem;
-  background: #1a1a1a;
+  z-index: 3;
   position: fixed;
 }
 nav a:hover {
@@ -39,7 +40,7 @@ nav a:hover {
 }
 h1 {
   font-weight: normal;
-  padding: 0 25%;
+  padding: 0 15%;
   text-align: center;
   font-size: 1.75rem;
 }
@@ -47,17 +48,20 @@ h1 {
   border-radius: 100%;
   justify-self: center;
   border: 2px solid white;
+  margin-top: 75px;
 }
 #hero {
   display: grid;
   justify-content: center;
   padding: 7.5% 0;
+  margin: 0;
   gap: 5%;
   background: #1a1a1a;
   width: 100%;
 }
+
 #about {
-  height: 10000px;
+  height: 1000px;
   z-index: 4; /* Set to 4!!!!!!!!!!!!!!*/
   display: inline-block;
   background: #eee;
@@ -78,7 +82,7 @@ h1 {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
 }
 
@@ -154,22 +158,22 @@ h1 {
 }
 
 .x8 {
-  animation: animateBubble 22s linear infinite, sideWays 3.5s ease-in-out infinite alternate;
+  animation: animateBubble 18s linear infinite, sideWays 3.5s ease-in-out infinite alternate;
   left: 80%;
   top: 10%;
   transform: scale(0.3);
 }
 
 .x9 {
-  animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 90%;
+  animation: animateBubble 30s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  left: 40%;
   top: 50%;
   transform: scale(0.6);
 }
 
 .x10 {
   animation: animateBubble 26s linear infinite, sideWays 2.75s ease-in-out infinite alternate;
-  left: 80%;
+  left: 75%;
   top: 80%;
   transform: scale(0.3);
 }
@@ -179,11 +183,9 @@ h1 {
 .bubble {
   border-radius: 50%;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
-
   height: 14vh;
   width: 14vh;
   position: absolute;
-
   display: flex;
   justify-content: center;
   padding: 1.25%;
